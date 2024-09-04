@@ -1,20 +1,20 @@
-function add(a, b) {
+function add(a: number, b: number) {
     return a + b;
 }
 
-function subtract(a, b) {
+function subtract(a: number, b: number) {
     return a - b;
 }
 
-function multiply(a, b) {
+function multiply(a: number, b: number) {
     return a * b;
 }
 
-function divide(a, b) {
+function divide(a: number, b: number) {
     return a / b;
 }
 
-function power(a, b) {
+function power(a: number, b: number) {
     let result = 1;
     for (let i = 0; i < b; i++) {
         result *= a;
@@ -22,27 +22,27 @@ function power(a, b) {
     return result;
 }
 
-function modulus(a, b) {
+function modulus(a: number, b: number) {
     return a % b;
 }
 
-function stringLength(str) {
+function stringLength(str: string) {
     return str.length;
 }
 
-function concatenate(str1, str2) {
+function concatenate(str1: string, str2: string) {
     return str1 + str2;
 }
 
-function toUpperCase(str) {
+function toUpperCase(str: string) {
     return str.toUpperCase();
 }
 
-function toLowerCase(str) {
+function toLowerCase(str: string) {
     return str.toLowerCase();
 }
 
-function average(arr) {
+function average(arr: number) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
@@ -50,7 +50,7 @@ function average(arr) {
     return sum / arr.length;
 }
 
-function max(arr) {
+function max(arr: number[]) {
     let maxVal = arr[0];
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] > maxVal) {
@@ -60,7 +60,7 @@ function max(arr) {
     return maxVal;
 }
 
-function min(arr) {
+function min(arr: number[]) {
     let minVal = arr[0];
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] < minVal) {
@@ -70,7 +70,7 @@ function min(arr) {
     return minVal;
 }
 
-function factorial(n) {
+function factorial(n: number) {
     let result = 1;
     for (let i = 1; i <= n; i++) {
         result *= i;
@@ -78,7 +78,7 @@ function factorial(n) {
     return result;
 }
 
-function isPrime(n) {
+function isPrime(n: number) {
     if (n <= 1) {
         return false;
     }
@@ -90,11 +90,11 @@ function isPrime(n) {
     return true;
 }
 
-function randomInRange(min, max) {
+function randomInRange(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function reverseString(str) {
+function reverseString(str: string) {
     let reversed = '';
     for (let i = str.length - 1; i >= 0; i--) {
         reversed += str[i];
@@ -102,7 +102,7 @@ function reverseString(str) {
     return reversed;
 }
 
-function countVowels(str) {
+function countVowels(str: string) {
     let count = 0;
     let vowels = 'aeiouAEIOU';
     for (let i = 0; i < str.length; i++) {
@@ -113,26 +113,26 @@ function countVowels(str) {
     return count;
 }
 
-let num1 = 10;
-let num2 = 20;
+let num1: number = 10;
+let num2: number = 20;
 let resultAdd = add(num1, num2);
 let resultSub = subtract(num1, num2);
 let resultMul = multiply(num1, num2);
 let resultDiv = divide(num1, num2);
 
-let str1 = "Hello";
-let str2 = "World";
+let str1: string = "Hello";
+let str2: string = "World";
 let resultConcat = concatenate(str1, str2);
 let resultUpper = toUpperCase(str1);
 let resultLower = toLowerCase(str2);
 let resultLength = stringLength(str1);
 
-let numbers = [1, 2, 3, 4, 5];
+let numbers: number[] = [1, 2, 3, 4, 5];
 let resultAvg = average(numbers);
 let resultMax = max(numbers);
 let resultMin = min(numbers);
 
-let num3 = 5;
+let num3: number = 5;
 let resultFactorial = factorial(num3);
 let resultIsPrime = isPrime(num3);
 
