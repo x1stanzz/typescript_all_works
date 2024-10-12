@@ -12,7 +12,8 @@
   },
   "scripts": {
     "lint-fix": "eslint --fix .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "typescript": "^4.9.5"
