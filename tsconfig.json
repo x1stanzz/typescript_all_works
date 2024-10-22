@@ -1,9 +1,11 @@
 {
     "compilerOptions": {
         "target": "ES2022",
+        "lib": ["ES2022", "DOM", "DOM.Iterable", "ESNext", "ESNext.Promise"],
         "esModuleInterop": true,
         "allowJs": true,
         "noUncheckedIndexedAccess": true,
         "strict": true
-    }
+    },
+    "include": ["js/**/*"]
 }
